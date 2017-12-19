@@ -418,6 +418,7 @@ MonoBehaviour:
   Key: 13
   TriggerName: Out
   TargetAnimator: {fileID: 1971802502}
+  InDelay: 1
 --- !u!114 &1971802504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +431,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Key: 13
-  targetAudioSource: {fileID: 1971802505}
+  TargetAudioSource: {fileID: 1971802505}
+  InDelay: 1
+  OneShot: 1
 --- !u!82 &1971802505
 AudioSource:
   m_ObjectHideFlags: 0

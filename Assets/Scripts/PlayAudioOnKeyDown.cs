@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayAudioOnKeyDown : MonoBehaviour 
 {
     public KeyCode Key;
-    public AudioSource targetAudioSource;
-    public floatDelay = 1f;
-    public bool acceptingInput = false;
+    public AudioSource TargetAudioSource;
+    public float InDelay = 1f;
+    public bool OneShot = true;
+
+    private bool acceptingInput = false;
 
     void Start()
     {
@@ -22,9 +24,9 @@ public class PlayAudioOnKeyDown : MonoBehaviour
    
     void Update()
     {
-        if (Input.GetKeyDown(Key))
+        if (acceptingInput && Input.GetKeyDown(Key))
         {
-            targetAudioSource.Play();
+            TargetAudioSource.Play();
             if (OneShot)
             {
                 acceptingInput = false;
