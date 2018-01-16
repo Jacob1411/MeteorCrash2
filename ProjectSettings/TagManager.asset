@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2904796675
+    locked: 0
+  - name: Player
+    uniqueID: 1455971977
+    locked: 0
+  - name: Asteroids
+    uniqueID: 1918539377
+    locked: 0
